@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  get '/', to: 'smoogle#index'
-  post '/search/:query', to:'smoogle#search'
+  get "/index", to: "smoogle#index"
+  get "/", to: "smoogle#home"
+  post "/search/:query", to:"smoogle#search"
 end

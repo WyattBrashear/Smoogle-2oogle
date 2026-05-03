@@ -1,0 +1,8 @@
+<h1>Smoogle - Index</h1>
+<div id="website-index">
+  <% @indexed.each do |url| %>
+    <div>
+      <span>URL: <%= url.url %></span>
+    </div>
+  <% end %>
+</div>
