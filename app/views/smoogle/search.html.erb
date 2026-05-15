@@ -6,9 +6,9 @@
 <body>
   <h1 style="text-align: center">Search Results for: <%= @search_term %></h1>
   <hr>
-  <% @url_data.each do |url| %>
+  <% @url_data.each do |url_data| %>
     <div>
-      <a href="<%= url %>"><%= url %></a>
+      <a href="<%= url_data.url %>"><%= url_data.url %></a>
     </div>
   <% end %>
   </body>
