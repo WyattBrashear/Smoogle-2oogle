@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_05_02_184144) do
+ActiveRecord::Schema[8.1].define(version: 2026_05_03_180543) do
+  create_table "smoogle_db2s", force: :cascade do |t|
+    t.text "content"
+    t.datetime "created_at", null: false
+    t.string "initiator"
+    t.datetime "recorded_at"
+    t.string "title"
+    t.datetime "updated_at", null: false
+    t.string "url"
+  end
+
   create_table "urls", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

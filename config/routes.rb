@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get "/index", to: "smoogle#index"
   get "/", to: "smoogle#home"
-  post "/search/:query", to:"smoogle#search"
+  get "/database/:id", to: "smoogle#database"
+  get "/search/:query", to:"smoogle#search"
 end

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%= @search_term %> | Smoogle Search</title>
+</head>
+<body>
+  <h1 style="text-align: center">Search Results for: <%= @search_term %></h1>
+  <hr>
+  <% @url_data.each do |url| %>
+    <div>
+      <a href="<%= url %>"><%= url %></a>
+    </div>
+  <% end %>
+  </body>
+</html>
