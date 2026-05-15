@@ -4,6 +4,7 @@
   <title><%= @search_term %> | Smoogle Search</title>
 </head>
 <body>
+  <button onclick="window.location.href='/'">Go Home</button>
   <h1 style="text-align: center">Search Results for: <%= @search_term %></h1>
   <hr>
   <% @url_data.each do |url_data| %>

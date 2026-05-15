@@ -8,7 +8,7 @@ class SmoogleController < ApplicationController
     @url_data = SmoogleDb2.find(params[:id])
   end
   def search
-    @url_data = SmoogleDb2.where("url LIKE ?", "%#{params[:search]}%")
-    @search_term = params[:search]
+    @url_data = SmoogleDb2.where("url LIKE ?", "%#{params[:query]}%")
+    @search_term = params[:query]
   end
 end

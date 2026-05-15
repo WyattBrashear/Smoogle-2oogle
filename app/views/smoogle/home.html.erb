@@ -6,8 +6,7 @@
 <body>
   <h1 style="text-align: center">Welcome to Smoogle!</h1>
   <hr>
-  <form action="">
-
-  </form>
+  <label for="search"></label><input placeholder="Im Looking For..." type="text" name="search" id="search">
+  <button onclick="window.location.href='/search/' + document.getElementById('search').value" type="submit">Search</button>
 </body>
 </html>
